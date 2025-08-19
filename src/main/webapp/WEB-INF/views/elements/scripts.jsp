@@ -1,0 +1,14 @@
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="js/index2.js"></script>
+<script src="js/xy.js"></script>
+<script src="js/stock.js"></script>
+<script src="js/Animated.js"></script>
+<script src="js/MSFT_minute.js"></script>
+<script src="js/MSFT_day.js"></script>
+<script src="js/MSFT_week.js"></script>
+<script src="js/MSFT_month.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mouseEvent.js"></script>
+<script src="js/darkMode.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/plugins/exporting.js"></script>
