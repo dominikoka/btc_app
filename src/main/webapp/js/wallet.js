@@ -151,7 +151,9 @@ let div;
 
 async function getSwap(photo) {
     console.log("get swap fetch")
-    const url = "http://localhost:8080/btc/swap";
+    //const url = "http://localhost:8080/btc/swap";
+    const url = "/btc/swap";
+
     try {
         const response = await fetch(url, {
             method: "GET",

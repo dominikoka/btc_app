@@ -3,7 +3,9 @@ payBtn.addEventListener('click', payFetch);
 
 async function payFetch(photo) {
     console.log("get pay fetch")
-    const url = "http://localhost:8080/btc/pay";
+    //const url = "http://localhost:8080/btc/pay";
+    const url = "/btc/pay";
+
     try {
         const response = await fetch(url, {
             method: "GET",
@@ -100,7 +102,8 @@ function payF() {
 }
 
 async function getPayLink(name, email, amount,currency,checkEmail) {
-    const url = "http://localhost:8080/btc/payu";
+    //const url = "http://localhost:8080/btc/payu";
+    const url = "/btc/payu";
     try {
         const response = await fetch(url, {
             method: "POST",

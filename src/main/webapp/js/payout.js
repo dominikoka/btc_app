@@ -4,7 +4,8 @@ payoutBtn.addEventListener('click', payFetch);
 
 async function payFetch(photo) {
     console.log("get pay fetch")
-    const url = "http://localhost:8080/btc/payout";
+    //const url = "http://localhost:8080/btc/payout";
+    const url = "/btc/payout";
     try {
         const response = await fetch(url, {
             method: "GET",
@@ -101,7 +102,9 @@ function payoutF()
     //getPayLink(name,email,amount,currency, checkEmail)
 }
 async function getPayOut(account,amount,currency,checkEmail) {
-    const url = "http://localhost:8080/btc/sendMoney";
+    //const url = "http://localhost:8080/btc/sendMoney";
+    const url = "/btc/sendMoney";
+
     try {
         const response = await fetch(url, {
             method: "POST",

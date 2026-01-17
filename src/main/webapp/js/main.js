@@ -81,7 +81,8 @@ async function loadDataFromInputs(startLabel, endLabel, intee) {
 
 
 async function getKlineData(startLabel, endLabel, intee,symbol) {
-    const url = "http://localhost:8080/btc/api";
+    //const url = "http://localhost:8080/btc/api";
+    const url = "/btc/api";
     try {
         const response = await fetch(url, {
             method: "POST",
@@ -596,7 +597,8 @@ async function getScreenShot() {
 }
 
 async function sendPhoto(photo) {
-    const url = "http://localhost:8080/btc/screenShoot";
+    //const url = "http://localhost:8080/btc/screenShoot";
+    const url = "/btc/screenShoot";
     try {
         const response = await fetch(url, {
             method: "POST",

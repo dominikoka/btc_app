@@ -145,7 +145,7 @@
     <dependency>
       <groupId>org.apache.tomcat.embed</groupId>
       <artifactId>tomcat-embed-jasper</artifactId>
-      <version>11.0.0-M14</version>
+      <version>10.1.30</version>
     </dependency>
 
     <!-- Lombok -->
@@ -163,6 +163,9 @@
     </dependency>
   </dependencies>
   <build>
+
+      <finalName>btc</finalName>
+
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

@@ -3,34 +3,44 @@
     <persistence-unit name="thePersistenceUnit">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>db.model.Wallet</class>
-<!--        <class>servlet.model.Pizza</class>-->
-<!--        <class>servlet.model.PizzaSizeAndPrices</class>-->
+        <!--        <class>servlet.model.Pizza</class>-->
+        <!--        <class>servlet.model.PizzaSizeAndPrices</class>-->
         <properties>
 
-            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:mysql://metro.proxy.rlwy.net:48751/btc?useSSL=false&amp;serverTimezone=UTC"/>
-
-            <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="hLZvnmTcITQEcCLYwGUcirYPnfTzCeeK"/>
-
-
-            <!--            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://pizzeria.c1gouuym4kxy.eu-north-1.rds.amazonaws.com:3306/pizzery"/>-->
+            <!--            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>-->
+            <!--            <property name="jakarta.persistence.jdbc.url"-->
+            <!--                      value="jdbc:mysql://database-1.cjci2w2kkihd.eu-north-1.rds.amazonaws.com:3306/btc"/>-->
             <!--            <property name="jakarta.persistence.jdbc.user" value="admin"/>-->
-            <!--            <property name="jakarta.persistence.jdbc.password" value="admin123"/>-->
+            <!--            <property name="jakarta.persistence.jdbc.password" value="dupadupa123"/>-->
+
+
+            <!--                        <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://pizzeria.c1gouuym4kxy.eu-north-1.rds.amazonaws.com:3306/pizzery"/>-->
+            <!--                        <property name="jakarta.persistence.jdbc.user" value="admin"/>-->
+            <!--                        <property name="jakarta.persistence.jdbc.password" value="admin123"/>-->
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/btc?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="root"/>
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
 
             <!--            //<property name="hibernate.hikari.dataSourceClassName" value="com.mysql.cj.jdbc.MysqlDataSource"/>-->
-<!--            <property name="hibernate.hikari.maximumPoolSize" value="10"/>-->
-<!--            <property name="hibernate.hikari.minimumIdle" value="5"/>-->
-<!--            <property name="hibernate.hikari.idleTimeout" value="30000"/>-->
-<!--            <property name="hibernate.hikari.maxLifetime" value="1800000"/>-->
-<!--            <property name="hibernate.hikari.connectionTimeout" value="20000"/>-->
-<!--            <property name="hibernate.hbm2ddl.auto-generation-logs" value="true" />-->
+            <!--            <property name="hibernate.hikari.maximumPoolSize" value="10"/>-->
+            <!--            <property name="hibernate.hikari.minimumIdle" value="5"/>-->
+            <!--            <property name="hibernate.hikari.idleTimeout" value="30000"/>-->
+            <!--            <property name="hibernate.hikari.maxLifetime" value="1800000"/>-->
+            <!--            <property name="hibernate.hikari.connectionTimeout" value="20000"/>-->
+            <!--            <property name="hibernate.hbm2ddl.auto-generation-logs" value="true" />-->
 
-<!--            <property name="hibernate.hikari.poolName" value="HikariCP-Pool"/>-->
-<!--            <property name="hibernate.hikari.autoCommit" value="false"/>-->
+            <!--            <property name="hibernate.hikari.poolName" value="HikariCP-Pool"/>-->
+            <!--            <property name="hibernate.hikari.autoCommit" value="false"/>-->
             <property name="hibernate.hikari.maximumPoolSize" value="10"/>
             <property name="hibernate.hikari.minimumIdle" value="5"/>
             <property name="hibernate.hikari.idleTimeout" value="30000"/>
@@ -42,7 +52,7 @@
 
             <property name="hibernate.hbm2ddl.auto" value="none"/>
             <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.type" value="TRACE"/>
             <property name="hibernate.generate_statistics" value="true"/>
         </properties>

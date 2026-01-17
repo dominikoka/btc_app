@@ -2,7 +2,8 @@ function checkCurrency(symbolToChange, amount, symbolFromChange) {
     let symbol = symbolToChange;
 
     async function checkCurrencyFetch() {
-        const url = "http://localhost:8080/btc/changeCheckCrypto";
+        //const url = "http://localhost:8080/btc/changeCheckCrypto";
+        const url = "/btc/changeCheckCrypto";
         try {
             const response = await fetch(url, {
                 method: "POST",
@@ -84,12 +85,13 @@ swapWindow.addEventListener('click', function (e) {
 })
 
 async function changeCurrencyFetch() {
-    const url = "http://localhost:8080/btc/changeCrypto";
+    //const url = "http://localhost:8080/btc/changeCrypto";
+    const url = "/btc/changeCrypto";
     try {
         const response = await fetch(url, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Typelocal": "application/json"
             },
             body: JSON.stringify({
                 symbolToChange: symbolToChange,
